@@ -1,0 +1,79 @@
+Attribute VB_Name = "adoYBIAMVT0"
+'---------------------------------------------------------
+Option Explicit
+'---------------------------------------------------------
+'---------------------------------------------------------
+Public Function rsYBIAMVT0_PutBuffer(rsADO As ADODB.Recordset, rsYBIAMVT0 As typeYBIAMVT0)
+'---------------------------------------------------------
+On Error GoTo Error_Handler
+rsYBIAMVT0_PutBuffer = Null
+
+rsADO("MOUVEMETA") = rsYBIAMVT0.MOUVEMETA
+rsADO("MOUVEMPLA") = rsYBIAMVT0.MOUVEMPLA
+rsADO("MOUVEMCOM") = rsYBIAMVT0.MOUVEMCOM
+rsADO("MOUVEMMON") = rsYBIAMVT0.MOUVEMMON
+rsADO("MOUVEMDOP") = rsYBIAMVT0.MOUVEMDOP
+rsADO("MOUVEMDVA") = rsYBIAMVT0.MOUVEMDVA
+rsADO("MOUVEMDCO") = rsYBIAMVT0.MOUVEMDCO
+rsADO("MOUVEMDTR") = rsYBIAMVT0.MOUVEMDTR
+rsADO("MOUVEMPIE") = rsYBIAMVT0.MOUVEMPIE
+rsADO("MOUVEMECR") = rsYBIAMVT0.MOUVEMECR
+rsADO("MOUVEMOPE") = rsYBIAMVT0.MOUVEMOPE
+rsADO("MOUVEMNUM") = rsYBIAMVT0.MOUVEMNUM
+rsADO("MOUVEMSCH") = rsYBIAMVT0.MOUVEMSCH
+rsADO("MOUVEMUTI") = rsYBIAMVT0.MOUVEMUTI
+rsADO("MOUVEMAGE") = rsYBIAMVT0.MOUVEMAGE
+rsADO("MOUVEMSER") = rsYBIAMVT0.MOUVEMSER
+rsADO("MOUVEMSSE") = rsYBIAMVT0.MOUVEMSSE
+rsADO("MOUVEMEXO") = rsYBIAMVT0.MOUVEMEXO
+rsADO("MOUVEMANA") = rsYBIAMVT0.MOUVEMANA
+rsADO("MOUVEMBDF") = rsYBIAMVT0.MOUVEMBDF
+rsADO("MOUVEMANU") = rsYBIAMVT0.MOUVEMANU
+rsADO("MOUVEMRET") = rsYBIAMVT0.MOUVEMRET
+rsADO("MOUVEMEVE") = rsYBIAMVT0.MOUVEMEVE
+rsADO("MOUVEMSAN") = rsYBIAMVT0.MOUVEMSAN
+rsADO("MOUVEMSAD") = rsYBIAMVT0.MOUVEMSAD
+   
+
+rsADO("LIBELLIB1") = rsYBIAMVT0.LIBELLIB1
+rsADO("LIBELLIB2") = rsYBIAMVT0.LIBELLIB2
+rsADO("LIBELLIB3") = rsYBIAMVT0.LIBELLIB3
+rsADO("LIBELLIB4") = rsYBIAMVT0.LIBELLIB4
+    
+rsADO("COMPTEOBL") = rsYBIAMVT0.COMPTEOBL
+rsADO("COMPTEINT") = rsYBIAMVT0.COMPTEINT
+rsADO("COMPTEDEV") = rsYBIAMVT0.COMPTEDEV
+rsADO("COMPTELOR") = rsYBIAMVT0.COMPTELOR
+rsADO("COMPTECLA") = rsYBIAMVT0.COMPTECLA
+    
+rsADO("BIAMVTSD0") = rsYBIAMVT0.BIAMVTSD0
+rsADO("BIAMVTID") = rsYBIAMVT0.BIAMVTID
+   
+Exit Function
+
+Error_Handler:
+
+rsYBIAMVT0_PutBuffer = Error
+
+End Function
+
+
+'---------------------------------------------------------
+Public Function adoYBIAMVT0_AddNew(rsADO As ADODB.Recordset, rsYBIAMVT0 As typeYBIAMVT0)
+'---------------------------------------------------------
+On Error GoTo Error_Handler
+
+adoYBIAMVT0_AddNew = Null
+rsADO.AddNew
+adoYBIAMVT0_AddNew = rsYBIAMVT0_PutBuffer(rsADO, rsYBIAMVT0)
+rsADO.Update
+
+Exit Function
+
+Error_Handler:
+
+adoYBIAMVT0_AddNew = Error
+
+End Function
+
+

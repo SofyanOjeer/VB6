@@ -1,0 +1,68 @@
+Public Sub Elp_Form_Resize(lMe As Form, lWindowState As Integer, lHeight_0 As Integer, lWidth_0 As Integer, lHeight_2 As Integer, lWidth_2 As Integer)
+Dim D1 As Double, D2 As Double, D3 As Double, wFontSize As Integer
+On Error Resume Next
+If lMe.WindowState = vbMaximized Then
+    frmUsr_Windowstate = vbMaximized
+    wFontSize = 12
+    lHeight_2 = lMe.Height: lWidth_2 = lMe.Width
+    If lHeight_0 <> 0 Then
+        D1 = lWidth_2 / lWidth_0
+        D2 = lHeight_2 / lHeight_0
+        D3 = (lHeight_2 / lHeight_0) * 0.75
+        
+    Else
+        Exit Sub
+    End If
+Else
+    frmUsr_Windowstate = vbNormal
+    wFontSize = 8
+    lHeight_0 = lMe.Height: lWidth_0 = lMe.Width
+    If lHeight_2 <> 0 Then
+        D1 = lWidth_0 / lWidth_2
+        D2 = lHeight_0 / lHeight_2
+        D3 = (lHeight_0 / lHeight_2) / 0.75
+    Else
+        Exit Sub
+    End If
+End If
+
+For Each xobj In lMe.Controls
+    If TypeOf xobj.Container Is Toolbar Then
+    Else
+        If TypeOf xobj Is Menu _
+        Or TypeOf xobj Is CoolBar _
+        Or TypeOf xobj Is Toolbar _
+        Or TypeOf xobj Is Timer Then
+        Else
+            If TypeOf xobj Is TextBox _
+            Or TypeOf xobj Is Label _
+            Or TypeOf xobj Is ComboBox _
+            Or TypeOf xobj Is fileListBox _
+            Or TypeOf xobj Is ListBox _
+            Or TypeOf xobj Is PictureBox _
+            Or TypeOf xobj Is MSFlexGrid Then
+                xobj.FontSize = wFontSize
+            End If
+            
+            On Error Resume Next
+            If xobj.Left > 0 Then xobj.Left = xobj.Left * D1
+            xobj.Top = xobj.Top * D2
+            xobj.Width = xobj.Width * D1
+            If TypeOf xobj Is ComboBox Then
+            Else
+                If TypeOf xobj Is TextBox Then
+                        xobj.Height = xobj.Height * D3
+                Else
+                        xobj.Height = xobj.Height * D2
+                End If
+                If TypeOf xobj Is IMAGE Then
+                    Set XImage = xobj
+                    Call Elp_ResizeImg(XImage)
+                End If
+            End If
+        End If
+    End If
+Next xobj
+lWindowState = lMe.WindowState
+End Sub
+

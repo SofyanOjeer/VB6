@@ -1,0 +1,13 @@
+frmElp = 0, 0, 639, 344, C, 198, 198, 937, 654, C
+frmElpPrt = 22, 22, 661, 366, C, 0, 0, 739, 456, C
+frmGuichetConventionEntreprise = 104, 165, 786, 509, C, -3, -2, 736, 505, C
+frmGuichetConventionJoint = -6, 4, 793, 357, C, 5, 0, 744, 497, C
+frmGuichetConventionParticulier = -9, 8, 780, 498, C, 17, -2, 756, 502, C
+ElpVb4 = 0, 135, 739, 591, 
+prtGuichetConventionEntreprise = 88, 88, 820, 545, C
+srvGuichetConventionEntreprise = -7, -1, 632, 502, C
+prtGuichetConventionJoint = 86, 46, 718, 399, C
+srvGuichetConventionJoint = 6, -1, 645, 507, C
+prtGuichetConventionParticulier = 10, 13, 769, 357, C
+srvGuichetConventionParticulier = 44, 44, 718, 489, C
+ElpX = 132, 132, 847, 572, 

@@ -1,0 +1,90 @@
+[SCC]
+SCC=This is a source code control file
+[Bia_System.vbp]
+SCC_Project_Name ="$/VB6/BiaSrc_VB/VB6", CIRAAAAA
+SCC_Aux_Path =\\Docsrv2013\install.bia\SourcesBIA\___VSS,
+[Bia_Sab.vbp]
+SCC_Project_Name ="$/VB6/BiaSrc_VB/VB6", CIRAAAAA
+SCC_Aux_Path =\\Docsrv2013\install.bia\SourcesBIA\___VSS,
+[Bia_Swift.vbp]
+SCC_Project_Name ="$/VB6/BiaSrc_VB/VB6", CIRAAAAA
+SCC_Aux_Path =\\Docsrv2013\install.bia\SourcesBIA\___VSS,
+[Bia_Audit.vbp]
+SCC_Project_Name ="$/VB6/BiaSrc_VB/VB6", CIRAAAAA
+SCC_Aux_Path =\\Docsrv2013\install.bia\SourcesBIA\___VSS,
+
+[Bia_DWH.vbp]
+SCC_Aux_Path =\\Docsrv2013\install.bia\SourcesBIA\___VSS,
+SCC_Project_Name ="$/VB6/BiaSrc_VB/VB6", CIRAAAAA
+
+[Bia_JRN.vbp]
+SCC_Aux_Path =\\Docsrv2013\install.bia\SourcesBIA\___VSS,
+SCC_Project_Name ="$/VB6/BiaSrc_VB/VB6", CIRAAAAA
+
+[Bia.vbp]
+SCC_Aux_Path =\\Docsrv2013\install.bia\SourcesBIA\___VSS,
+SCC_Project_Name ="$/VB6/BiaSrc_VB/VB6", CIRAAAAA
+
+[Bia_Access.vbp]
+SCC_Aux_Path = "\\Docsrv2013\install.bia\SourcesBIA\___VSS"
+SCC_Project_Name = "$/VB6/BiaSrc_VB/VB6", CIRAAAAA
+
+[BiaCD.VBP]
+SCC_Aux_Path = "\\Docsrv2013\install.bia\SourcesBIA\___VSS"
+SCC_Project_Name = "$/VB6/BiaSrc_VB/VB6", CIRAAAAA
+
+[BiaCpt.VBP]
+SCC_Aux_Path = "\\Docsrv2013\install.bia\SourcesBIA\___VSS"
+SCC_Project_Name = "$/VB6/BiaSrc_VB/VB6", CIRAAAAA
+
+[BiaFTP.vbp]
+SCC_Aux_Path = "\\Docsrv2013\install.bia\SourcesBIA\___VSS"
+SCC_Project_Name = "$/VB6/BiaSrc_VB/VB6", CIRAAAAA
+
+[BiaGuichetConvention.vbp]
+SCC_Aux_Path = "\\Docsrv2013\install.bia\SourcesBIA\___VSS"
+SCC_Project_Name = "$/VB6/BiaSrc_VB/VB6", CIRAAAAA
+
+[BiaODBC.VBP]
+SCC_Aux_Path = "\\Docsrv2013\install.bia\SourcesBIA\___VSS"
+SCC_Project_Name = "$/VB6/BiaSrc_VB/VB6", CIRAAAAA
+
+[BiaS820I.VBP]
+SCC_Aux_Path =\\Docsrv2013\install.bia\SourcesBIA\___VSS,
+SCC_Project_Name ="$/VB6/BiaSrc_VB/VB6", CIRAAAAA
+
+[F118.vbp]
+SCC_Aux_Path = "\\Docsrv2013\install.bia\SourcesBIA\___VSS"
+SCC_Project_Name = "$/VB6/BiaSrc_VB/VB6", CIRAAAAA
+
+[F240.vbp]
+SCC_Aux_Path = "\\Docsrv2013\install.bia\SourcesBIA\___VSS"
+SCC_Project_Name = "$/VB6/BiaSrc_VB/VB6", CIRAAAAA
+
+[F720.vbp]
+SCC_Aux_Path = "\\Docsrv2013\install.bia\SourcesBIA\___VSS"
+SCC_Project_Name = "$/VB6/BiaSrc_VB/VB6", CIRAAAAA
+
+[Padding_X.vbp]
+SCC_Aux_Path = "\\Docsrv2013\install.bia\SourcesBIA\___VSS"
+SCC_Project_Name = "$/VB6/BiaSrc_VB/VB6", CIRAAAAA
+
+[Projet1.vbp]
+SCC_Aux_Path = "\\Docsrv2013\install.bia\SourcesBIA\___VSS"
+SCC_Project_Name = "$/VB6/BiaSrc_VB/VB6", CIRAAAAA
+
+[Projet2.vbp]
+SCC_Aux_Path = "\\Docsrv2013\install.bia\SourcesBIA\___VSS"
+SCC_Project_Name = "$/VB6/BiaSrc_VB/VB6", CIRAAAAA
+
+[Aib_Sab.vbp]
+SCC_Aux_Path =\\Docsrv2013\install.bia\SourcesBIA\___VSS,
+SCC_Project_Name ="$/VB6/BiaSrc_VB/VB6", CIRAAAAA
+
+[Aib_Swift - Copie.vbp]
+SCC_Aux_Path = "\\Docsrv2013\install.bia\SourcesBIA\___VSS"
+SCC_Project_Name = "$/VB6/BiaSrc_VB/VB6", CIRAAAAA
+
+[Aib_Swift.vbp]
+SCC_Aux_Path =\\Docsrv2013\install.bia\SourcesBIA\___VSS,
+SCC_Project_Name ="$/VB6/BiaSrc_VB/VB6", CIRAAAAA

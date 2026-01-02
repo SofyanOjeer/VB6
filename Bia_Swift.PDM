@@ -1,0 +1,400 @@
+[Root]
+Most Recent Package=Fichier  1.dep
+
+
+[Package|Logiciel d'installation standard 1|Root]
+SubWizProgID=PDWizard.SetupPkgSubWiz
+BuildFolder=E:\SourcesVB6\BiaSrc_VB\VB6\Package
+
+[Package|Logiciel d'installation standard 1|Configure DAO ISAMs]
+Applicable=Yes
+Jet 2.x=Yes
+
+[Package|Logiciel d'installation standard 1|Configure DAO ODBC]
+JetWorkspace=Yes
+ODBCDirect=Yes
+
+[Package|Logiciel d'installation standard 1|Files Found]
+
+[Package|Logiciel d'installation standard 1|Files Released]
+
+[Package|Logiciel d'installation standard 1|Missing Dependency Information]
+C:\Program Files\PDFCreator\PDFCreator.exe=
+C:\Windows\System32\ieframe.dll=
+C:\Program Files\Common Files\microsoft shared\OFFICE12\MSO.DLL=
+C:\Program Files\Microsoft Office\Office12\MSWORD.OLB=
+C:\Program Files\Xerox\DSClient\DSSvrMap.dll=
+C:\Program Files\Xerox\DSClient\ItemEnum.dll=
+C:\Program Files\Microsoft Office\Office12\EXCEL.EXE=
+C:\Windows\System32\vbSendMail.dll=
+C:\Program Files\Common Files\System\ado\msado28.tlb=
+C:\Windows\System32\cwbdq.dll=
+
+[Package|Logiciel d'installation standard 1|Out-of-Date Dependency Information]
+C:\Windows\System32\COMDLG32.OCX=
+C:\Windows\System32\msmask32.ocx=
+C:\Windows\System32\msflxgrd.ocx=
+C:\Windows\System32\RICHTX32.OCX=
+C:\Windows\System32\COMCT332.OCX=
+C:\Windows\System32\MSCOMCT2.OCX=
+C:\Windows\System32\MSCOMCTL.OCX=
+C:\Windows\System32\TABCTL32.OCX=
+C:\Windows\System32\scrrun.dll=
+
+[Package|Logiciel d'installation standard 1|Files Added]
+
+[Package|Logiciel d'installation standard 1|Files Removed]
+
+[Package|Logiciel d'installation standard 1|Files In Project]
+E:\SourcesVB6\BiaSrc_VB\VB6\Bia_Swift.exe=Yes
+C:\Windows\System32\msvbvm60.dll=Yes
+C:\Windows\System32\oleaut32.dll=Yes
+C:\Windows\System32\olepro32.dll=Yes
+C:\Windows\System32\asycfilt.dll=Yes
+C:\Windows\System32\stdole2.tlb=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=Yes
+C:\Windows\System32\VB6FR.DLL=Yes
+C:\Windows\System32\cwbdq.dll=Yes
+C:\Program Files\Common Files\microsoft shared\DAO\DAO350.DLL=Yes
+C:\Windows\System32\msjet35.dll=Yes
+C:\Windows\System32\MSJTER35.DLL=Yes
+C:\Windows\System32\msjint35.dll=Yes
+C:\Windows\System32\vbajet32.dll=Yes
+C:\Windows\System32\expsrv.dll=Yes
+C:\Windows\System32\MSRD2X35.DLL=Yes
+C:\Windows\System32\msrepl35.dll=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MSVCRT40.DLL=Yes
+C:\Windows\System32\VB5DB.DLL=Yes
+C:\Windows\System32\scrrun.dll=Yes
+C:\Windows\System32\msvcrt.dll=Yes
+C:\Windows\System32\scrrnfr.dll=Yes
+C:\Program Files\Common Files\System\ado\msado28.tlb=Yes
+C:\Windows\System32\vbSendMail.dll=Yes
+C:\Program Files\Microsoft Office\Office12\EXCEL.EXE=Yes
+C:\Program Files\Xerox\DSClient\ItemEnum.dll=Yes
+C:\Program Files\Xerox\DSClient\DSSvrMap.dll=Yes
+C:\Program Files\Microsoft Office\Office12\MSWORD.OLB=Yes
+C:\Program Files\Common Files\microsoft shared\OFFICE12\MSO.DLL=Yes
+C:\Windows\System32\ieframe.dll=Yes
+C:\Program Files\PDFCreator\PDFCreator.exe=Yes
+C:\Windows\System32\TABCTL32.OCX=Yes
+C:\Windows\System32\TABCTFR.DLL=Yes
+C:\Windows\System32\MSCOMCTL.OCX=Yes
+C:\Windows\System32\MSCMCFR.DLL=Yes
+C:\Windows\System32\MSCOMCT2.OCX=Yes
+C:\Windows\System32\MSCC2FR.DLL=Yes
+C:\Windows\System32\COMCT332.OCX=Yes
+C:\Windows\System32\CMCT3FR.DLL=Yes
+C:\Windows\System32\RICHTX32.OCX=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\RICHED32.DLL=Yes
+C:\Windows\System32\RCHTXFR.DLL=Yes
+C:\Windows\System32\msflxgrd.ocx=Yes
+C:\Windows\System32\FLXGDFR.DLL=Yes
+C:\Windows\System32\msmask32.ocx=Yes
+C:\Windows\System32\MSMSKFR.DLL=Yes
+C:\Windows\System32\COMDLG32.OCX=Yes
+C:\Windows\System32\CMDLGFR.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MDAC_TYP.EXE=Yes
+C:\Windows\System32\MSRDO20.DLL=Yes
+C:\Windows\System32\RDOCURS.DLL=Yes
+C:\Windows\System32\RDO20FR.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=Yes
+C:\Windows\System32\VB6STKIT.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=Yes
+
+[Package|Logiciel d'installation standard 1|Configure Registry Files]
+Applicable=No
+
+[Package|Logiciel d'installation standard 1|Configure Remote Servers]
+Applicable=No
+
+[Package|Logiciel d'installation standard 1|Install Locations]
+E:\SourcesVB6\BiaSrc_VB\VB6\Bia_Swift.exe=$(AppPath)
+C:\Windows\System32\msvbvm60.dll=$(WinSysPathSysFile)
+C:\Windows\System32\oleaut32.dll=$(WinSysPathSysFile)
+C:\Windows\System32\olepro32.dll=$(WinSysPathSysFile)
+C:\Windows\System32\asycfilt.dll=$(WinSysPathSysFile)
+C:\Windows\System32\stdole2.tlb=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+C:\Windows\System32\VB6FR.DLL=$(WinSysPath)
+C:\Windows\System32\cwbdq.dll=$(WinSysPath)
+C:\Program Files\Common Files\microsoft shared\DAO\DAO350.DLL=$(MSDAOPath)
+C:\Windows\System32\msjet35.dll=$(WinSysPathSysFile)
+C:\Windows\System32\MSJTER35.DLL=$(WinSysPathSysFile)
+C:\Windows\System32\msjint35.dll=$(WinSysPathSysFile)
+C:\Windows\System32\vbajet32.dll=$(WinSysPathSysFile)
+C:\Windows\System32\expsrv.dll=$(WinSysPathSysFile)
+C:\Windows\System32\MSRD2X35.DLL=$(WinSysPathSysFile)
+C:\Windows\System32\msrepl35.dll=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MSVCRT40.DLL=$(WinSysPathSysFile)
+C:\Windows\System32\VB5DB.DLL=$(WinSysPath)
+C:\Windows\System32\scrrun.dll=$(WinSysPath)
+C:\Windows\System32\msvcrt.dll=$(WinSysPathSysFile)
+C:\Windows\System32\scrrnfr.dll=$(WinSysPath)
+C:\Program Files\Common Files\System\ado\msado28.tlb=$(WinSysPath)
+C:\Windows\System32\vbSendMail.dll=$(WinSysPath)
+C:\Program Files\Microsoft Office\Office12\EXCEL.EXE=$(AppPath)
+C:\Program Files\Xerox\DSClient\ItemEnum.dll=$(WinSysPath)
+C:\Program Files\Xerox\DSClient\DSSvrMap.dll=$(WinSysPath)
+C:\Program Files\Microsoft Office\Office12\MSWORD.OLB=$(WinSysPath)
+C:\Program Files\Common Files\microsoft shared\OFFICE12\MSO.DLL=$(WinSysPath)
+C:\Windows\System32\ieframe.dll=$(WinSysPath)
+C:\Program Files\PDFCreator\PDFCreator.exe=$(AppPath)
+C:\Windows\System32\TABCTL32.OCX=$(WinSysPath)
+C:\Windows\System32\TABCTFR.DLL=$(WinSysPath)
+C:\Windows\System32\MSCOMCTL.OCX=$(WinSysPath)
+C:\Windows\System32\MSCMCFR.DLL=$(WinSysPath)
+C:\Windows\System32\MSCOMCT2.OCX=$(WinSysPath)
+C:\Windows\System32\MSCC2FR.DLL=$(WinSysPath)
+C:\Windows\System32\COMCT332.OCX=$(WinSysPath)
+C:\Windows\System32\CMCT3FR.DLL=$(WinSysPath)
+C:\Windows\System32\RICHTX32.OCX=$(WinSysPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\RICHED32.DLL=$(WinSysPathSysFile)
+C:\Windows\System32\RCHTXFR.DLL=$(WinSysPath)
+C:\Windows\System32\msflxgrd.ocx=$(WinSysPath)
+C:\Windows\System32\FLXGDFR.DLL=$(WinSysPath)
+C:\Windows\System32\msmask32.ocx=$(WinSysPath)
+C:\Windows\System32\MSMSKFR.DLL=$(WinSysPath)
+C:\Windows\System32\COMDLG32.OCX=$(WinSysPath)
+C:\Windows\System32\CMDLGFR.DLL=$(WinSysPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MDAC_TYP.EXE=$(AppPath)
+C:\Windows\System32\MSRDO20.DLL=$(WinSysPath)
+C:\Windows\System32\RDOCURS.DLL=$(WinSysPath)
+C:\Windows\System32\RDO20FR.DLL=$(WinSysPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
+C:\Windows\System32\VB6STKIT.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+
+[Package|Logiciel d'installation standard 1|Configure Shared Files]
+Applicable=Yes
+E:\SourcesVB6\BiaSrc_VB\VB6\Bia_Swift.exe=No
+C:\Program Files\Microsoft Office\Office12\EXCEL.EXE=No
+C:\Program Files\PDFCreator\PDFCreator.exe=No
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MDAC_TYP.EXE=No
+
+[Package|Logiciel d'installation standard 1|Distribution]
+Type=single
+Size=
+Title=Bia_Swift
+
+[Package|Logiciel d'installation standard 1|IconGroups]
+Group0=Bia_Swift
+PrivateGroup0=Vrai
+Parent0=$(Programs)
+
+[Package|Logiciel d'installation standard 1|Bia_Swift]
+Icon1=Bia_Swift.exe
+Title1=Bia_Swift
+StartIn1=$(AppPath)
+Key1=Icon1
+
+[Package|Logiciel d'installation standard 1|Package]
+PackageFolder=E:\SourcesVB6\BiaSrc_VB\VB6\Package
+ProjectFolder=E:\SourcesVB6\BiaSrc_VB\VB6
+ServerSideCab=
+File1=E:\SourcesVB6\BiaSrc_VB\VB6\Package\setup.exe
+File2=E:\SourcesVB6\BiaSrc_VB\VB6\Package\Setup.Lst
+File3=E:\SourcesVB6\BiaSrc_VB\VB6\Package\Bia_Swift.CAB
+Handler1=PDWizard.FolderDplySubWiz
+Handler2=PDWizard.WebPostDplySubWiz
+
+
+[Package|Fichier  1.dep|Root]
+SubWizProgID=PDWizard.DepPkgSubWiz
+BuildFolder=E:\SourcesVB6\BiaSrc_VB\VB6\Package
+
+[Package|Fichier  1.dep|Configure DAO ISAMs]
+Applicable=Yes
+Jet 2.x=Yes
+
+[Package|Fichier  1.dep|Configure DAO ODBC]
+JetWorkspace=Yes
+ODBCDirect=Yes
+
+[Package|Fichier  1.dep|Files Found]
+
+[Package|Fichier  1.dep|Files Released]
+
+[Package|Fichier  1.dep|Missing Dependency Information]
+C:\Program Files\PDFCreator\PDFCreator.exe=
+C:\Windows\System32\ieframe.dll=
+C:\Program Files\Common Files\microsoft shared\OFFICE12\MSO.DLL=
+C:\Program Files\Microsoft Office\Office12\MSWORD.OLB=
+C:\Program Files\Xerox\DSClient\DSSvrMap.dll=
+C:\Program Files\Xerox\DSClient\ItemEnum.dll=
+C:\Program Files\Microsoft Office\Office12\EXCEL.EXE=
+C:\Windows\System32\vbSendMail.dll=
+C:\Program Files\Common Files\System\ado\msado28.tlb=
+C:\Windows\System32\cwbdq.dll=
+
+[Package|Fichier  1.dep|Out-of-Date Dependency Information]
+C:\Windows\System32\COMDLG32.OCX=
+C:\Windows\System32\msmask32.ocx=
+C:\Windows\System32\msflxgrd.ocx=
+C:\Windows\System32\RICHTX32.OCX=
+C:\Windows\System32\COMCT332.OCX=
+C:\Windows\System32\MSCOMCT2.OCX=
+C:\Windows\System32\MSCOMCTL.OCX=
+C:\Windows\System32\TABCTL32.OCX=
+C:\Windows\System32\scrrun.dll=
+
+[Package|Fichier  1.dep|Files Added]
+
+[Package|Fichier  1.dep|Files Removed]
+
+[Package|Fichier  1.dep|Files In Project]
+E:\SourcesVB6\BiaSrc_VB\VB6\Bia_Swift.exe=Yes
+C:\Windows\System32\msvbvm60.dll=Yes
+C:\Windows\System32\oleaut32.dll=Yes
+C:\Windows\System32\olepro32.dll=Yes
+C:\Windows\System32\asycfilt.dll=Yes
+C:\Windows\System32\stdole2.tlb=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=Yes
+C:\Windows\System32\VB6FR.DLL=Yes
+C:\Windows\System32\cwbdq.dll=Yes
+C:\Program Files\Common Files\microsoft shared\DAO\DAO350.DLL=Yes
+C:\Windows\System32\msjet35.dll=Yes
+C:\Windows\System32\MSJTER35.DLL=Yes
+C:\Windows\System32\msjint35.dll=Yes
+C:\Windows\System32\vbajet32.dll=Yes
+C:\Windows\System32\expsrv.dll=Yes
+C:\Windows\System32\MSRD2X35.DLL=Yes
+C:\Windows\System32\msrepl35.dll=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MSVCRT40.DLL=Yes
+C:\Windows\System32\VB5DB.DLL=Yes
+C:\Windows\System32\scrrun.dll=Yes
+C:\Windows\System32\msvcrt.dll=Yes
+C:\Windows\System32\scrrnfr.dll=Yes
+C:\Program Files\Common Files\System\ado\msado28.tlb=Yes
+C:\Windows\System32\vbSendMail.dll=Yes
+C:\Program Files\Microsoft Office\Office12\EXCEL.EXE=Yes
+C:\Program Files\Xerox\DSClient\ItemEnum.dll=Yes
+C:\Program Files\Xerox\DSClient\DSSvrMap.dll=Yes
+C:\Program Files\Microsoft Office\Office12\MSWORD.OLB=Yes
+C:\Program Files\Common Files\microsoft shared\OFFICE12\MSO.DLL=Yes
+C:\Windows\System32\ieframe.dll=Yes
+C:\Program Files\PDFCreator\PDFCreator.exe=Yes
+C:\Windows\System32\TABCTL32.OCX=Yes
+C:\Windows\System32\TABCTFR.DLL=Yes
+C:\Windows\System32\MSCOMCTL.OCX=Yes
+C:\Windows\System32\MSCMCFR.DLL=Yes
+C:\Windows\System32\MSCOMCT2.OCX=Yes
+C:\Windows\System32\MSCC2FR.DLL=Yes
+C:\Windows\System32\COMCT332.OCX=Yes
+C:\Windows\System32\CMCT3FR.DLL=Yes
+C:\Windows\System32\RICHTX32.OCX=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\RICHED32.DLL=Yes
+C:\Windows\System32\RCHTXFR.DLL=Yes
+C:\Windows\System32\msflxgrd.ocx=Yes
+C:\Windows\System32\FLXGDFR.DLL=Yes
+C:\Windows\System32\msmask32.ocx=Yes
+C:\Windows\System32\MSMSKFR.DLL=Yes
+C:\Windows\System32\COMDLG32.OCX=Yes
+C:\Windows\System32\CMDLGFR.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MDAC_TYP.EXE=Yes
+C:\Windows\System32\MSRDO20.DLL=Yes
+C:\Windows\System32\RDOCURS.DLL=Yes
+C:\Windows\System32\RDO20FR.DLL=Yes
+C:\Windows\System32\odbc32.dll=Yes
+
+[Package|Fichier  1.dep|Configure Registry Files]
+Applicable=No
+
+[Package|Fichier  1.dep|Configure Remote Servers]
+Applicable=No
+
+[Package|Fichier  1.dep|Install Locations]
+E:\SourcesVB6\BiaSrc_VB\VB6\Bia_Swift.exe=$(AppPath)
+C:\Windows\System32\msvbvm60.dll=$(WinSysPathSysFile)
+C:\Windows\System32\oleaut32.dll=$(WinSysPathSysFile)
+C:\Windows\System32\olepro32.dll=$(WinSysPathSysFile)
+C:\Windows\System32\asycfilt.dll=$(WinSysPathSysFile)
+C:\Windows\System32\stdole2.tlb=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+C:\Windows\System32\VB6FR.DLL=$(WinSysPath)
+C:\Windows\System32\cwbdq.dll=$(WinSysPath)
+C:\Program Files\Common Files\microsoft shared\DAO\DAO350.DLL=$(MSDAOPath)
+C:\Windows\System32\msjet35.dll=$(WinSysPathSysFile)
+C:\Windows\System32\MSJTER35.DLL=$(WinSysPathSysFile)
+C:\Windows\System32\msjint35.dll=$(WinSysPathSysFile)
+C:\Windows\System32\vbajet32.dll=$(WinSysPathSysFile)
+C:\Windows\System32\expsrv.dll=$(WinSysPathSysFile)
+C:\Windows\System32\MSRD2X35.DLL=$(WinSysPathSysFile)
+C:\Windows\System32\msrepl35.dll=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MSVCRT40.DLL=$(WinSysPathSysFile)
+C:\Windows\System32\VB5DB.DLL=$(WinSysPath)
+C:\Windows\System32\scrrun.dll=$(WinSysPath)
+C:\Windows\System32\msvcrt.dll=$(WinSysPathSysFile)
+C:\Windows\System32\scrrnfr.dll=$(WinSysPath)
+C:\Program Files\Common Files\System\ado\msado28.tlb=$(WinSysPath)
+C:\Windows\System32\vbSendMail.dll=$(WinSysPath)
+C:\Program Files\Microsoft Office\Office12\EXCEL.EXE=$(AppPath)
+C:\Program Files\Xerox\DSClient\ItemEnum.dll=$(WinSysPath)
+C:\Program Files\Xerox\DSClient\DSSvrMap.dll=$(WinSysPath)
+C:\Program Files\Microsoft Office\Office12\MSWORD.OLB=$(WinSysPath)
+C:\Program Files\Common Files\microsoft shared\OFFICE12\MSO.DLL=$(WinSysPath)
+C:\Windows\System32\ieframe.dll=$(WinSysPath)
+C:\Program Files\PDFCreator\PDFCreator.exe=$(AppPath)
+C:\Windows\System32\TABCTL32.OCX=$(WinSysPath)
+C:\Windows\System32\TABCTFR.DLL=$(WinSysPath)
+C:\Windows\System32\MSCOMCTL.OCX=$(WinSysPath)
+C:\Windows\System32\MSCMCFR.DLL=$(WinSysPath)
+C:\Windows\System32\MSCOMCT2.OCX=$(WinSysPath)
+C:\Windows\System32\MSCC2FR.DLL=$(WinSysPath)
+C:\Windows\System32\COMCT332.OCX=$(WinSysPath)
+C:\Windows\System32\CMCT3FR.DLL=$(WinSysPath)
+C:\Windows\System32\RICHTX32.OCX=$(WinSysPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\RICHED32.DLL=$(WinSysPathSysFile)
+C:\Windows\System32\RCHTXFR.DLL=$(WinSysPath)
+C:\Windows\System32\msflxgrd.ocx=$(WinSysPath)
+C:\Windows\System32\FLXGDFR.DLL=$(WinSysPath)
+C:\Windows\System32\msmask32.ocx=$(WinSysPath)
+C:\Windows\System32\MSMSKFR.DLL=$(WinSysPath)
+C:\Windows\System32\COMDLG32.OCX=$(WinSysPath)
+C:\Windows\System32\CMDLGFR.DLL=$(WinSysPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MDAC_TYP.EXE=$(AppPath)
+C:\Windows\System32\MSRDO20.DLL=$(WinSysPath)
+C:\Windows\System32\RDOCURS.DLL=$(WinSysPath)
+C:\Windows\System32\RDO20FR.DLL=$(WinSysPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
+C:\Windows\System32\VB6STKIT.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+C:\Windows\System32\odbc32.dll=$(WinSysPathSysFile)
+
+[Package|Fichier  1.dep|Configure Shared Files]
+Applicable=Yes
+E:\SourcesVB6\BiaSrc_VB\VB6\Bia_Swift.exe=No
+C:\Program Files\Microsoft Office\Office12\EXCEL.EXE=No
+C:\Program Files\PDFCreator\PDFCreator.exe=No
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MDAC_TYP.EXE=No
+
+[Package|Fichier  1.dep|Distribution]
+Type=single
+Size=
+Title=Bia_Swift
+
+[Package|Fichier  1.dep|IconGroups]
+Group0=Bia_Swift
+PrivateGroup0=Vrai
+Parent0=$(Programs)
+
+[Package|Fichier  1.dep|Bia_Swift]
+Icon1=Bia_Swift.exe
+Title1=Bia_Swift
+StartIn1=$(AppPath)
+Key1=Icon1
+
+[Package|Fichier  1.dep|DepFile]
+DepCabFile=Bia_Swift.CAB
+DepCabRun=Bia_Swift.INF
+
+[Package|Fichier  1.dep|Package]
+PackageFolder=E:\SourcesVB6\BiaSrc_VB\VB6\Package
+ProjectFolder=E:\SourcesVB6\BiaSrc_VB\VB6
+ServerSideCab=
+File1=E:\SourcesVB6\BiaSrc_VB\VB6\Package\Bia_Swift.DEP
+Handler1=PDWizard.FolderDplySubWiz
+Handler2=PDWizard.WebPostDplySubWiz

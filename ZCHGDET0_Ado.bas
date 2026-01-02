@@ -1,0 +1,59 @@
+Attribute VB_Name = "adoZCHGDET0"
+'---------------------------------------------------------
+Option Explicit
+Public Function rsZCHGDET0_PutBuffer(rsADO As ADODB.Recordset, rszCHGDET0 As typeZCHGDET0)
+On Error GoTo Error_Handler
+rsZCHGDET0_PutBuffer = Null
+rsADO("CHGDETETA") = rszCHGDET0.CHGDETETA
+rsADO("CHGDETAGE") = rszCHGDET0.CHGDETAGE
+rsADO("CHGDETSER") = rszCHGDET0.CHGDETSER
+rsADO("CHGDETSSE") = rszCHGDET0.CHGDETSSE
+rsADO("CHGDETOPE") = rszCHGDET0.CHGDETOPE
+rsADO("CHGDETDOS") = rszCHGDET0.CHGDETDOS
+rsADO("CHGDETTYP") = rszCHGDET0.CHGDETTYP
+rsADO("CHGDETORD") = rszCHGDET0.CHGDETORD
+rsADO("CHGDETAG1") = rszCHGDET0.CHGDETAG1
+rsADO("CHGDETDE1") = rszCHGDET0.CHGDETDE1
+rsADO("CHGDETCP1") = rszCHGDET0.CHGDETCP1
+rsADO("CHGDETCL1") = rszCHGDET0.CHGDETCL1
+rsADO("CHGDETAG2") = rszCHGDET0.CHGDETAG2
+rsADO("CHGDETDE2") = rszCHGDET0.CHGDETDE2
+rsADO("CHGDETCP2") = rszCHGDET0.CHGDETCP2
+rsADO("CHGDETCL2") = rszCHGDET0.CHGDETCL2
+rsADO("CHGDETCOM") = rszCHGDET0.CHGDETCOM
+rsADO("CHGDETREG") = rszCHGDET0.CHGDETREG
+rsADO("CHGDETDTE") = rszCHGDET0.CHGDETDTE
+rsADO("CHGDETMES") = rszCHGDET0.CHGDETMES
+rsADO("CHGDETSEN") = rszCHGDET0.CHGDETSEN
+rsADO("CHGDETMON") = rszCHGDET0.CHGDETMON
+rsADO("CHGDETFRF") = rszCHGDET0.CHGDETFRF
+rsADO("CHGDETEXO") = rszCHGDET0.CHGDETEXO
+rsADO("CHGDETTAX") = rszCHGDET0.CHGDETTAX
+rsADO("CHGDETTVA") = rszCHGDET0.CHGDETTVA
+rsADO("CHGDETDFA") = rszCHGDET0.CHGDETDFA
+rsADO("CHGDETFAC") = rszCHGDET0.CHGDETFAC
+rsADO("CHGDETGLO") = rszCHGDET0.CHGDETGLO
+rsADO("CHGDETGFR") = rszCHGDET0.CHGDETGFR
+Exit Function
+Error_Handler:
+rsZCHGDET0_PutBuffer = Error
+End Function
+
+'---------------------------------------------------------
+Public Function adoZCHGDET0_AddNew(rsADO As ADODB.Recordset, rszCHGDET0 As typeZCHGDET0)
+'---------------------------------------------------------
+On Error GoTo Error_Handler
+
+adoZCHGDET0_AddNew = Null
+rsADO.AddNew
+adoZCHGDET0_AddNew = rsZCHGDET0_PutBuffer(rsADO, rszCHGDET0)
+rsADO.Update
+
+Exit Function
+
+Error_Handler:
+
+adoZCHGDET0_AddNew = Error
+
+End Function
+

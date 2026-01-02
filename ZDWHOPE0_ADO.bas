@@ -1,0 +1,76 @@
+Attribute VB_Name = "adoZDWHOPE0"
+'---------------------------------------------------------
+Option Explicit
+'---------------------------------------------------------
+'---------------------------------------------------------
+Public Function rsZDWHOPE0_PutBuffer(rsADO As ADODB.Recordset, rsZDWHOPE0 As typeZDWHOPE0)
+'---------------------------------------------------------
+On Error GoTo Error_Handler
+rsZDWHOPE0_PutBuffer = Null
+rsADO("DWHOPEDTX") = rsZDWHOPE0.DWHOPEDTX
+rsADO("DWHOPEETA") = rsZDWHOPE0.DWHOPEETA
+rsADO("DWHOPEAGE") = rsZDWHOPE0.DWHOPEAGE
+rsADO("DWHOPESER") = rsZDWHOPE0.DWHOPESER
+rsADO("DWHOPESSE") = rsZDWHOPE0.DWHOPESSE
+rsADO("DWHOPEOPR") = rsZDWHOPE0.DWHOPEOPR
+rsADO("DWHOPENAT") = rsZDWHOPE0.DWHOPENAT
+rsADO("DWHOPENDO") = rsZDWHOPE0.DWHOPENDO
+rsADO("DWHOPESEQ") = rsZDWHOPE0.DWHOPESEQ
+rsADO("DWHOPECON") = rsZDWHOPE0.DWHOPECON
+rsADO("DWHOPEPAS") = rsZDWHOPE0.DWHOPEPAS
+rsADO("DWHOPEBDF") = rsZDWHOPE0.DWHOPEBDF
+rsADO("DWHOPEENG") = rsZDWHOPE0.DWHOPEENG
+rsADO("DWHOPEDIS") = rsZDWHOPE0.DWHOPEDIS
+rsADO("DWHOPEFIN") = rsZDWHOPE0.DWHOPEFIN
+rsADO("DWHOPEDEV") = rsZDWHOPE0.DWHOPEDEV
+rsADO("DWHOPEMON") = rsZDWHOPE0.DWHOPEMON
+rsADO("DWHOPEVAL") = rsZDWHOPE0.DWHOPEVAL
+rsADO("DWHOPECOE") = rsZDWHOPE0.DWHOPECOE
+rsADO("DWHOPECDA") = rsZDWHOPE0.DWHOPECDA
+rsADO("DWHOPENOA") = rsZDWHOPE0.DWHOPENOA
+rsADO("DWHOPEDEA") = rsZDWHOPE0.DWHOPEDEA
+rsADO("DWHOPEAUT") = rsZDWHOPE0.DWHOPEAUT
+rsADO("DWHOPEDUR6") = rsZDWHOPE0.DWHOPEDUR6
+rsADO("DWHOPERES6") = rsZDWHOPE0.DWHOPERES6
+rsADO("DWHOPETYP") = rsZDWHOPE0.DWHOPETYP
+rsADO("DWHOPEFIX") = rsZDWHOPE0.DWHOPEFIX
+rsADO("DWHOPENOUV") = rsZDWHOPE0.DWHOPENOUV
+rsADO("DWHOPEMOIN") = rsZDWHOPE0.DWHOPEMOIN
+rsADO("DWHOPECMOI") = rsZDWHOPE0.DWHOPECMOI
+rsADO("DWHOPEMIN") = rsZDWHOPE0.DWHOPEMIN
+rsADO("DWHOPEVIN") = rsZDWHOPE0.DWHOPEVIN
+rsADO("DWHOPEMFI") = rsZDWHOPE0.DWHOPEMFI
+rsADO("DWHOPECFI") = rsZDWHOPE0.DWHOPECFI
+rsADO("DWHOPEDSY") = rsZDWHOPE0.DWHOPEDSY
+
+    
+Exit Function
+
+Error_Handler:
+
+rsZDWHOPE0_PutBuffer = Error
+
+End Function
+
+
+'---------------------------------------------------------
+Public Function adoZDWHOPE0_AddNew(rsADO As ADODB.Recordset, rsZDWHOPE0 As typeZDWHOPE0)
+'---------------------------------------------------------
+On Error GoTo Error_Handler
+
+adoZDWHOPE0_AddNew = Null
+rsADO.AddNew
+adoZDWHOPE0_AddNew = rsZDWHOPE0_PutBuffer(rsADO, rsZDWHOPE0)
+rsADO.Update
+
+Exit Function
+
+Error_Handler:
+
+adoZDWHOPE0_AddNew = Error
+
+End Function
+
+
+
+

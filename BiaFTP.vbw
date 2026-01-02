@@ -1,0 +1,5 @@
+srvAs400Cmd = 1, 1, 774, 460, 
+Common = 0, 0, 0, 0, C
+DataQueue = 0, 0, 0, 0, C
+srvElpCom = 88, 88, 862, 519, C
+srvBIAFTP = 11, 47, 734, 615, 

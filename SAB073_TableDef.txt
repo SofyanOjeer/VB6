@@ -1,0 +1,299 @@
+Type typeYBIACPT0
+   
+    COMPTEETA       As Integer                        ' ETABLISSEMENT
+    COMPTEPLA       As Long                           ' NUMERO PLAN
+    COMPTECOM       As String * 20                    ' NUMERO COMPTE
+    COMPTEOBL       As String * 10                    ' COMPTE OBLIGATOIRE
+    COMPTEINT       As String * 32                    ' INTITULE
+    COMPTEAGE       As Integer                        ' AGENCE
+    COMPTEDEV       As String * 3                     ' TABLES BASE 013
+    COMPTEOUV       As Long                           ' DATE OUVERTURE
+    COMPTECLO       As Long                           ' DATE CLOTURE
+    COMPTELOR       As String * 1                     ' Lori/Nostri/AUTRE
+    COMPTESUC       As String * 1                     ' O/N
+    COMPTECLA       As Long                           ' CLASSE SECURITE
+    COMPTEFON       As String * 1                     ' TABLES BASE 015
+    COMPTEBLO       As Long                           ' DATE LIMITE BLOCAGE
+    COMPTEMOT       As String * 32                    ' MOTIF BLOCAGE
+    COMPTESEN       As String * 1                     ' CODE SENS SOLDE D/C
+    COMPTEMOD       As Long                           ' DATE MODIFICATION
+    
+    
+    CLIENAETB       As Integer                        ' CODE ETABLISSEMENT
+    CLIENACLI       As String * 7                     ' NUMERO CLIENT
+    CLIENAAGE       As Integer                        ' CODE AGENCE
+    CLIENAETA       As String * 4                     ' CODE ETAT
+    CLIENARA1       As String * 32                    ' NOM OU DESIGNATION
+    CLIENARA2       As String * 32                    ' PRENOM/DESIGNATION
+    CLIENASIG       As String * 12                    ' SIGLE USUEL
+    CLIENASRN       As String * 9                     ' NUMERO SIREN
+    CLIENASRT       As Long                           ' NUMERO SIRET
+    CLIENADNA       As Long                           ' DATE DE NAISSANCE
+    CLIENAREG       As String * 6                     ' SECT ACTIVITE REGLEM
+    CLIENANAT       As String * 3                     ' CDE PAYS NATIONALITE
+    CLIENARSD       As String * 3                     ' CDE PAYS DE RESIDENC
+    CLIENARES       As String * 3                     ' RESPONS/EXPLOITATION
+    CLIENAECO       As String * 3                     ' QUALITE/AG ECONOMIQU
+    CLIENAACT       As String * 1                     ' COTE ACTIVITE
+    CLIENAPAI       As String * 1                     ' COTE PAIEMENT
+    CLIENACRD       As String * 1                     ' COTE CREDIT
+    CLIENAADM       As String * 1                     ' COTE ADMISSION
+    CLIENAATR       As Long                           ' DAT ATRIB/COTAT BDF
+    CLIENABIL       As Long                           ' AN DERN BIL COMM BDF
+    CLIENACAT       As String * 3                     ' CATEGORIE CLIENT
+    CLIENACOT       As String * 3                     ' COTATION INTERNE
+    CLIENACHQ       As String * 1                     ' INTERDICTION CHEQUIE
+    CLIENADAT       As Long                           ' INTERDIT CHEQUIER
+    CLIENASAC       As String * 6                     ' SECTEUR D ACTIVITE
+    CLIENAGEO       As String * 3                     ' SECTEUR GEOGRAPHIQUE
+    CLIENAENT       As String * 3                     ' ENTREPRISE LIEE
+    CLIENAMES       As String * 1                     ' LANGUE MESSAGERIE
+    CLIENAPAY       As Long                           ' DATE ENTREE AU PAYS
+    CLIENAFIL       As String * 32                    ' NOM DE JEUNE FILLE
+    CLIENABIM       As Long                           ' BILAN DE MOIS
+    CLIENADOU       As String * 1                     ' CLIENT DOUTEUX O/N
+    CLIENALI1       As String * 3                     ' ZONE LIBRE DE 3 CAR.
+    CLIENALI2       As String * 2                     ' ZONE LIBRE DE 2 CAR.
+    CLIENAEXT       As String * 32                    ' EXTENTION DU NOM
+    CLIENACOL       As String * 1                     ' 0=CLI/COLL=1/AUTRE=2
+    CLIENATIE       As String * 7                     ' TIERS DE REFERENCE
+    CLIENASEL       As String * 3                     ' CODE SELECTION
+    CLIENAPCS       As String * 4                     ' CODE PCS
+    CLIENACRE       As Long                           ' DATE CREATION
+    
+    PLANCOPRO       As String * 3                     ' TABLES BASE 014
+    
+    SOLDEDMO        As Long                           ' DATE DERNIER MVT
+    SOLDECEN        As Currency                       ' SOLDE ENCOURS
+    COMREFREF       As String * 15                    ' EX référence
+
+    TITULACLI       As String * 7                     ' NUMERO CLIENT
+    TITULAPRI       As String * 1                     ' 0:PRINCIPAL, 1:AUTRE
+    TITULATPR       As String * 1                     ' 0:PRINCIPAL, 1:AUTRE
+
+End Type
+Type typeZCOMPTE0
+     COMPTEETA       As Integer                        ' ETABLISSEMENT
+    COMPTEPLA       As Long                           ' NUMERO PLAN
+    COMPTECOM       As String * 20                    ' NUMERO COMPTE
+    COMPTEOBL       As String * 10                    ' COMPTE OBLIGATOIRE
+    COMPTEINT       As String * 32                    ' INTITULE
+    COMPTEAGE       As Integer                        ' AGENCE
+    COMPTEDEV       As String * 3                     ' TABLES BASE 013
+    COMPTEOUV       As Long                           ' DATE OUVERTURE
+    COMPTECLO       As Long                           ' DATE CLOTURE
+    COMPTELOR       As String * 1                     ' Lori/Nostri/AUTRE
+    COMPTESUC       As String * 1                     ' O/N
+    COMPTECLA       As Long                           ' CLASSE SECURITE
+    COMPTEFON       As String * 1                     ' TABLES BASE 015
+    COMPTEBLO       As Long                           ' DATE LIMITE BLOCAGE
+    COMPTEMOT       As String * 32                    ' MOTIF BLOCAGE
+    COMPTESEN       As String * 1                     ' CODE SENS SOLDE D/C
+    COMPTEMOD       As Long                           ' DATE MODIFICATION
+   
+End Type
+Type typeZCOMREF0
+    COMREFETA       As Integer                        ' ETABLISSEMENT
+    COMREFPLA       As Long                           ' NUMERO PLAN
+    COMREFCOM       As String * 20                    ' NUMERO COMPTE
+    COMREFCOR       As String * 2                     ' CODE REFERENCE
+    COMREFREF       As String * 15                    ' REFERENCE COMPTE
+End Type
+Type typeZPLAN0
+    
+    PLANETABL       As Integer                        ' ETABLISSEMENT
+    PLANPLAN        As Long                           ' NUMERO PLAN
+    PLANCOOBL       As String * 10                    ' COMPTE OBLIGATOIRE
+    PLANINTIT       As String * 32                    ' INTITULE
+    PLANCOPRO       As String * 3                     ' TABLES BASE 014
+    PLANCLASS       As Long                           ' CLASSE SECURITE
+    PLANFONCT       As String * 1                     ' TABLES BASE 015
+    PLANSESOL       As String * 1                     ' CODE SENS SOLDE D/C
+    PLANGEDEP       As String * 1                     ' O/N
+    PLANTIERS       As String * 1                     ' COMPTE TIERS O/N
+    PLANFICOB       As String * 1                     ' O/N
+    PLANCARAC       As Long                           ' 3 à 20
+    PLANPESTO       As String * 1                     ' Mois, Trimestre, Année
+    PLANNBPER       As Long                           ' 1 à 24
+    PLANNBMOU       As Long                           ' NB MVT A CONSERVER
+    PLANINEXT       As String * 32                    ' INTITUL EXTRAIT CPT
+    PLANPROGR       As String * 8                     ' PROGRAMME DE CONTROL
+    
+End Type
+Type typeZSOLDE0
+    
+    SOLDEETA        As Integer                        ' ETABLISSEMENT
+    SOLDEPLA        As Long                           ' NUMERO PLAN
+    SOLDECOM        As String * 20                    ' NUMERO COMPTE
+    SOLDEDMO        As Long                           ' DATE DERNIER MVT
+    SOLDEDAN        As Long                           ' DATE ANTERIEUR
+    SOLDECEN        As Currency                         ' SOLDE ENCOURS
+    SOLDECAN        As Currency                         ' SOLDE ANTERIEUR
+    SOLDEC01        As Currency                         ' SOLDE M
+    SOLDEC02        As Currency                         ' SOLDE M -1
+    SOLDEC03        As Currency                         ' SOLDE M -2
+    SOLDEC04        As Currency                         ' SOLDE M -3
+    SOLDEC05        As Currency                         ' SOLDE M -4
+    SOLDEC06        As Currency                         ' SOLDE M -5
+    SOLDEC07        As Currency                         ' SOLDE M -6
+    SOLDEC08        As Currency                         ' SOLDE M -7
+    SOLDEC09        As Currency                         ' SOLDE M -8
+    SOLDEC10        As Currency                         ' SOLDE M -9
+    SOLDEC11        As Currency                         ' SOLDE M -10
+    SOLDEC12        As Currency                         ' SOLDE M -11
+    SOLDEVEN        As Currency                         ' SOLDE VAL. ENCOURS
+    SOLDEVAN        As Currency                         ' SOLDE VAL. ANTERIEUR
+    SOLDEV01        As Currency                         ' SOLDE VAL. M
+    SOLDEV02        As Currency                         ' SOLDE VAL. M -1
+    SOLDEV03        As Currency                         ' SOLDE VAL. M -2
+    SOLDEV04        As Currency                         ' SOLDE VAL. M -3
+    SOLDEV05        As Currency                         ' SOLDE VAL. M -4
+    SOLDEV06        As Currency                         ' SOLDE VAL. M -5
+    SOLDEV07        As Currency                         ' SOLDE VAL. M -6
+    SOLDEV08        As Currency                         ' SOLDE VAL. M -7
+    SOLDEV09        As Currency                         ' SOLDE VAL. M -8
+    SOLDEV10        As Currency                         ' SOLDE VAL. M -9
+    SOLDEV11        As Currency                         ' SOLDE VAL. M -10
+    SOLDEV12        As Currency                         ' SOLDE VAL. M -11
+    
+End Type
+
+Type typeZADRESS0
+
+    
+    ADRESSETA       As Integer                        ' Etablissement
+    ADRESSTYP       As String * 1                     ' 1 client , 2 compte
+    ADRESSPLA       As Long                           ' Numéro de plan
+    ADRESSNUM       As String * 20                    ' ou numéro de client
+    ADRESSCOA       As String * 2                     ' Code adresse
+    ADRESSDLI       As Long                           ' Date limite validité
+    ADRESSDDE       As Long                           ' Date début validité
+    ADRESSRA1       As String * 32                    ' ou raison sociale 1
+    ADRESSRA2       As String * 32                    ' ou raison sociale 2
+    ADRESSAD1       As String * 32                    ' Adresse 1
+    ADRESSAD2       As String * 32                    ' Adresse 2
+    ADRESSAD3       As String * 32                    ' Adresse 3
+    ADRESSCOP       As String * 6                     ' Code postal
+    ADRESSVIL       As String * 25                    ' Ville
+    ADRESSPAY       As String * 25                    ' Pays
+    ADRESSTEL       As String * 20                    ' No Tel.
+    ADRESSFAX       As String * 20                    ' No Fax.
+    ADRESSTEX       As String * 20                    ' No Télex
+End Type
+Type typeYBIATAB0
+    BIATABID        As String * 12
+    BIATABK1        As String * 12
+    BIATABK2        As String * 12
+    BIATABTEXT      As String * 128
+End Type
+Type typeZCLIENA0
+    CLIENAETB       As Integer                        ' CODE ETABLISSEMENT
+    CLIENACLI       As String * 7                     ' NUMERO CLIENT
+    CLIENAAGE       As Integer                        ' CODE AGENCE
+    CLIENAETA       As String * 4                     ' CODE ETAT
+    CLIENARA1       As String * 32                    ' NOM OU DESIGNATION
+    CLIENARA2       As String * 32                    ' PRENOM/DESIGNATION
+    CLIENASIG       As String * 12                    ' SIGLE USUEL
+    CLIENASRN       As String * 9                     ' NUMERO SIREN
+    CLIENASRT       As Long                           ' NUMERO SIRET
+    CLIENADNA       As Long                           ' DATE DE NAISSANCE
+    CLIENAREG       As String * 6                     ' SECT ACTIVITE REGLEM
+    CLIENANAT       As String * 3                     ' CDE PAYS NATIONALITE
+    CLIENARSD       As String * 3                     ' CDE PAYS DE RESIDENC
+    CLIENARES       As String * 3                     ' RESPONS/EXPLOITATION
+    CLIENAECO       As String * 3                     ' QUALITE/AG ECONOMIQU
+    CLIENAACT       As String * 1                     ' COTE ACTIVITE
+    CLIENAPAI       As String * 1                     ' COTE PAIEMENT
+    CLIENACRD       As String * 1                     ' COTE CREDIT
+    CLIENAADM       As String * 1                     ' COTE ADMISSION
+    CLIENAATR       As Long                           ' DAT ATRIB/COTAT BDF
+    CLIENABIL       As Long                           ' AN DERN BIL COMM BDF
+    CLIENACAT       As String * 3                     ' CATEGORIE CLIENT
+    CLIENACOT       As String * 3                     ' COTATION INTERNE
+    CLIENACHQ       As String * 1                     ' INTERDICTION CHEQUIE
+    CLIENADAT       As Long                           ' INTERDIT CHEQUIER
+    CLIENASAC       As String * 6                     ' SECTEUR D ACTIVITE
+    CLIENAGEO       As String * 3                     ' SECTEUR GEOGRAPHIQUE
+    CLIENAENT       As String * 3                     ' ENTREPRISE LIEE
+    CLIENAMES       As String * 1                     ' LANGUE MESSAGERIE
+    CLIENAPAY       As Long                           ' DATE ENTREE AU PAYS
+    CLIENAFIL       As String * 32                    ' NOM DE JEUNE FILLE
+    CLIENABIM       As Long                           ' BILAN DE MOIS
+    CLIENADOU       As String * 1                     ' CLIENT DOUTEUX O/N
+    CLIENALI1       As String * 3                     ' ZONE LIBRE DE 3 CAR.
+    CLIENALI2       As String * 2                     ' ZONE LIBRE DE 2 CAR.
+    CLIENAEXT       As String * 32                    ' EXTENTION DU NOM
+    CLIENACOL       As String * 1                     ' 0=CLI/COLL=1/AUTRE=2
+    CLIENATIE       As String * 7                     ' TIERS DE REFERENCE
+    CLIENASEL       As String * 3                     ' CODE SELECTION
+    CLIENAPCS       As String * 4                     ' CODE PCS
+    CLIENACRE       As Long                           ' DATE CREATION
+End Type
+Type typeZCLIGRP0
+ 
+      CLIGRPETB     As Long
+      CLIGRPCLI     As String * 7
+      CLIGRPREG     As String * 7
+      CLIGRPREL     As String * 3
+      CLIGRPCOM     As String * 28
+      CLIGRPAUT     As String * 1
+      CLIGRPRAT     As String * 1
+      CLIGRPTAU     As Double
+      CLIGRPPAR     As Long
+      
+
+End Type
+Type typeZTITULA0
+
+    TITULAETA       As Integer                        ' ETABLISSEMENT
+    TITULAPLA       As Long                           ' NUMERO PLAN
+    TITULACOM       As String * 20                    ' NUMERO COMPTE
+    TITULACLI       As String * 7                     ' NUMERO CLIENT
+    TITULAPRI       As String * 1                     ' 0:PRINCIPAL, 1:AUTRE
+    TITULATPR       As String * 1                     ' 0:PRINCIPAL, 1:AUTRE
+End Type
+Type typeYCHQMON0
+
+      CHQRC1ETA     As Long
+      CHQRC1AGE     As Long
+      CHQRC1SER     As String * 2
+      CHQRC1SSE     As String * 2
+      CHQRC1OPE     As String * 3
+      CHQRC1DOS     As Long
+      CHQRC1DCR     As Long
+      CHQDATE       As Long
+      CHQCOMPTE     As String * 20
+      CHQCREM       As String * 8
+      CHQDEVISE     As String * 3
+      CHQMONTANT    As Currency
+      CHQNB         As Long
+      CHQMONSTA     As String * 1   '
+      CHQMONUPDS    As Long
+
+End Type
+Type typeYBIASTO0
+
+    YSTOETA          As String * 2
+    YSTOAGE          As String * 2
+    YSTOSER          As String * 2
+    YSTOSSE          As String * 2
+    YSTOOPE          As String * 3
+    YSTONUM          As Long
+    YSTOSEQ          As Long
+    YSTOPCI          As String * 10
+    YSTOCCL          As String * 1
+    YSTOCLI          As Long
+    YSTODEV          As String * 3
+    YSTOMON          As Currency
+    YSTODEB          As Long
+    YSTOFIN          As Long
+    YSTOAPP          As String * 3
+    YSTONAT          As String * 6
+    YSTOCC1          As String * 1
+    YSTOCL1          As Long
+    YSTOCC2          As String * 1
+    YSTOCL2          As Long
+    YSTOCTX          As String * 6
+    YSTOTAU          As Double
+
+End Type

@@ -1,0 +1,4 @@
+Ligne 42: La classe RichTextLib.RichTextBox du contrôle txtRTF n'est pas une classe de contrôle chargée.
+Ligne 65: La classe MSComctlLib.ImageList du contrôle imglstRTF n'est pas une classe de contrôle chargée.
+Ligne 128: La classe MSComctlLib.Toolbar du contrôle tbRTF_Justification n'est pas une classe de contrôle chargée.
+Ligne 188: La classe MSComctlLib.Toolbar du contrôle tbRTF_Font n'est pas une classe de contrôle chargée.

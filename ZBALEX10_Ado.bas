@@ -1,0 +1,73 @@
+Attribute VB_Name = "adoZBALEX10"
+'---------------------------------------------------------
+Option Explicit
+'---------------------------------------------------------
+'---------------------------------------------------------
+Public Function rsZBALEX10_PutBuffer(rsADO As ADODB.Recordset, rsZBALEX10 As typeZBALEX10)
+'---------------------------------------------------------
+On Error GoTo Error_Handler
+rsZBALEX10_PutBuffer = Null
+rsADO("BALEX1DTA") = rsZBALEX10.BALEX1DTA
+rsADO("BALEX1ETA") = rsZBALEX10.BALEX1ETA
+rsADO("BALEX1AGE") = rsZBALEX10.BALEX1AGE
+rsADO("BALEX1SER") = rsZBALEX10.BALEX1SER
+rsADO("BALEX1SSE") = rsZBALEX10.BALEX1SSE
+rsADO("BALEX1PLA") = rsZBALEX10.BALEX1PLA
+rsADO("BALEX1OPE") = rsZBALEX10.BALEX1OPE
+rsADO("BALEX1NAT") = rsZBALEX10.BALEX1NAT
+rsADO("BALEX1NUM") = rsZBALEX10.BALEX1NUM
+rsADO("BALEX1TYP") = rsZBALEX10.BALEX1TYP
+rsADO("BALEX1CLI") = rsZBALEX10.BALEX1CLI
+rsADO("BALEX1DEV") = rsZBALEX10.BALEX1DEV
+rsADO("BALEX1DBA") = rsZBALEX10.BALEX1DBA
+rsADO("BALEX1FIN") = rsZBALEX10.BALEX1FIN
+rsADO("BALEX1DUI") = rsZBALEX10.BALEX1DUI
+rsADO("BALEX1DUR") = rsZBALEX10.BALEX1DUR
+rsADO("BALEX1CAA") = rsZBALEX10.BALEX1CAA
+rsADO("BALEX1CAT") = rsZBALEX10.BALEX1CAT
+rsADO("BALEX1REG") = rsZBALEX10.BALEX1REG
+rsADO("BALEX1TXG") = rsZBALEX10.BALEX1TXG
+rsADO("BALEX1AGG") = rsZBALEX10.BALEX1AGG
+rsADO("BALEX1SRG") = rsZBALEX10.BALEX1SRG
+rsADO("BALEX1SSG") = rsZBALEX10.BALEX1SSG
+rsADO("BALEX1OPG") = rsZBALEX10.BALEX1OPG
+rsADO("BALEX1NTG") = rsZBALEX10.BALEX1NTG
+rsADO("BALEX1NDG") = rsZBALEX10.BALEX1NDG
+rsADO("BALEX1ENC") = rsZBALEX10.BALEX1ENC
+rsADO("BALEX1PRO") = rsZBALEX10.BALEX1PRO
+rsADO("BALEX1EHB") = rsZBALEX10.BALEX1EHB
+rsADO("BALEX1EXB") = rsZBALEX10.BALEX1EXB
+rsADO("BALEX1EXN") = rsZBALEX10.BALEX1EXN
+rsADO("BALEX1MOT") = rsZBALEX10.BALEX1MOT
+rsADO("BALEX1DAJ") = rsZBALEX10.BALEX1DAJ
+rsADO("BALEX1UAJ") = rsZBALEX10.BALEX1UAJ
+rsADO("BALEX1FIL") = rsZBALEX10.BALEX1FIL
+    
+Exit Function
+
+Error_Handler:
+
+rsZBALEX10_PutBuffer = Error
+
+End Function
+
+
+'---------------------------------------------------------
+Public Function adoZBALEX10_AddNew(rsADO As ADODB.Recordset, rsZBALEX10 As typeZBALEX10)
+'---------------------------------------------------------
+On Error GoTo Error_Handler
+
+adoZBALEX10_AddNew = Null
+rsADO.AddNew
+adoZBALEX10_AddNew = rsZBALEX10_PutBuffer(rsADO, rsZBALEX10)
+rsADO.Update
+
+Exit Function
+
+Error_Handler:
+
+adoZBALEX10_AddNew = Error
+
+End Function
+
+

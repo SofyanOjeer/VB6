@@ -1,0 +1,135 @@
+[Root]
+Most Recent Package=Fichier  1.dep
+
+
+[Package|Fichier  1.dep|Root]
+SubWizProgID=PDWizard.DepPkgSubWiz
+BuildFolder=e:\SourcesVB6\BiaSrc_VB\VB6
+
+[Package|Fichier  1.dep|Configure DAO ISAMs]
+Applicable=No
+
+[Package|Fichier  1.dep|Configure DAO ODBC]
+JetWorkspace=
+ODBCDirect=
+
+[Package|Fichier  1.dep|Files Found]
+
+[Package|Fichier  1.dep|Files Released]
+
+[Package|Fichier  1.dep|Missing Dependency Information]
+C:\Program Files\PDFCreator\PDFCreator.exe=
+C:\Windows\System32\msxml6.dll=
+C:\Program Files\Xerox\DSClient\ItemEnum.dll=
+C:\Program Files\Xerox\DSClient\DSSvrMap.dll=
+C:\Program Files\Microsoft Office\Office12\EXCEL.EXE=
+C:\Windows\System32\vbSendMail.dll=
+C:\Program Files\Common Files\System\ado\msjro.dll=
+C:\Program Files\Common Files\System\ado\msado28.tlb=
+
+[Package|Fichier  1.dep|Out-of-Date Dependency Information]
+C:\Windows\System32\COMDLG32.OCX=
+C:\Windows\System32\msflxgrd.ocx=
+C:\Windows\System32\RICHTX32.OCX=
+C:\Windows\System32\COMCT332.OCX=
+C:\Windows\System32\MSCOMCT2.OCX=
+C:\Windows\System32\MSCOMCTL.OCX=
+C:\Windows\System32\TABCTL32.OCX=
+C:\Windows\System32\scrrun.dll=
+
+[Package|Fichier  1.dep|Files Added]
+
+[Package|Fichier  1.dep|Files Removed]
+
+[Package|Fichier  1.dep|Files In Project]
+C:\BIASRV\Bia_System.exe=Yes
+C:\Windows\System32\msvbvm60.dll=Yes
+C:\Windows\System32\oleaut32.dll=Yes
+C:\Windows\System32\olepro32.dll=Yes
+C:\Windows\System32\asycfilt.dll=Yes
+C:\Windows\System32\stdole2.tlb=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=Yes
+C:\Windows\System32\VB6FR.DLL=Yes
+C:\Windows\System32\scrrun.dll=Yes
+C:\Windows\System32\msvcrt.dll=Yes
+C:\Windows\System32\scrrnfr.dll=Yes
+C:\Program Files\Common Files\System\ado\msado28.tlb=Yes
+C:\Program Files\Common Files\System\ado\msjro.dll=Yes
+C:\Windows\System32\vbSendMail.dll=Yes
+C:\Program Files\Microsoft Office\Office12\EXCEL.EXE=Yes
+C:\Program Files\Xerox\DSClient\DSSvrMap.dll=Yes
+C:\Program Files\Xerox\DSClient\ItemEnum.dll=Yes
+C:\Windows\System32\msxml6.dll=Yes
+C:\Program Files\PDFCreator\PDFCreator.exe=Yes
+C:\Windows\System32\TABCTL32.OCX=Yes
+C:\Windows\System32\TABCTFR.DLL=Yes
+C:\Windows\System32\MSCOMCTL.OCX=Yes
+C:\Windows\System32\MSCMCFR.DLL=Yes
+C:\Windows\System32\MSCOMCT2.OCX=Yes
+C:\Windows\System32\MSCC2FR.DLL=Yes
+C:\Windows\System32\COMCT332.OCX=Yes
+C:\Windows\System32\CMCT3FR.DLL=Yes
+C:\Windows\System32\RICHTX32.OCX=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\RICHED32.DLL=Yes
+C:\Windows\System32\RCHTXFR.DLL=Yes
+C:\Windows\System32\msflxgrd.ocx=Yes
+C:\Windows\System32\FLXGDFR.DLL=Yes
+C:\Windows\System32\COMDLG32.OCX=Yes
+C:\Windows\System32\CMDLGFR.DLL=Yes
+
+[Package|Fichier  1.dep|Configure Registry Files]
+Applicable=
+
+[Package|Fichier  1.dep|Configure Remote Servers]
+Applicable=
+
+[Package|Fichier  1.dep|Install Locations]
+C:\BIASRV\Bia_System.exe=$(AppPath)
+C:\Windows\System32\msvbvm60.dll=$(WinSysPathSysFile)
+C:\Windows\System32\oleaut32.dll=$(WinSysPathSysFile)
+C:\Windows\System32\olepro32.dll=$(WinSysPathSysFile)
+C:\Windows\System32\asycfilt.dll=$(WinSysPathSysFile)
+C:\Windows\System32\stdole2.tlb=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+C:\Windows\System32\VB6FR.DLL=$(WinSysPath)
+C:\Windows\System32\scrrun.dll=$(WinSysPath)
+C:\Windows\System32\msvcrt.dll=$(WinSysPathSysFile)
+C:\Windows\System32\scrrnfr.dll=$(WinSysPath)
+C:\Program Files\Common Files\System\ado\msado28.tlb=$(WinSysPath)
+C:\Program Files\Common Files\System\ado\msjro.dll=$(WinSysPath)
+C:\Windows\System32\vbSendMail.dll=$(WinSysPath)
+C:\Program Files\Microsoft Office\Office12\EXCEL.EXE=$(AppPath)
+C:\Program Files\Xerox\DSClient\DSSvrMap.dll=$(WinSysPath)
+C:\Program Files\Xerox\DSClient\ItemEnum.dll=$(WinSysPath)
+C:\Windows\System32\msxml6.dll=$(WinSysPath)
+C:\Program Files\PDFCreator\PDFCreator.exe=$(AppPath)
+C:\Windows\System32\TABCTL32.OCX=$(WinSysPath)
+C:\Windows\System32\TABCTFR.DLL=$(WinSysPath)
+C:\Windows\System32\MSCOMCTL.OCX=$(WinSysPath)
+C:\Windows\System32\MSCMCFR.DLL=$(WinSysPath)
+C:\Windows\System32\MSCOMCT2.OCX=$(WinSysPath)
+C:\Windows\System32\MSCC2FR.DLL=$(WinSysPath)
+C:\Windows\System32\COMCT332.OCX=$(WinSysPath)
+C:\Windows\System32\CMCT3FR.DLL=$(WinSysPath)
+C:\Windows\System32\RICHTX32.OCX=$(WinSysPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\RICHED32.DLL=$(WinSysPathSysFile)
+C:\Windows\System32\RCHTXFR.DLL=$(WinSysPath)
+C:\Windows\System32\msflxgrd.ocx=$(WinSysPath)
+C:\Windows\System32\FLXGDFR.DLL=$(WinSysPath)
+C:\Windows\System32\COMDLG32.OCX=$(WinSysPath)
+C:\Windows\System32\CMDLGFR.DLL=$(WinSysPath)
+
+[Package|Fichier  1.dep|Configure Shared Files]
+Applicable=
+
+[Package|Fichier  1.dep|DepFile]
+DepCabFile=Bia_System.CAB
+DepCabRun=Bia_System.INF
+
+[Package|Fichier  1.dep|Package]
+PackageFolder=e:\SourcesVB6\BiaSrc_VB\VB6
+ProjectFolder=E:\SourcesVB6\BiaSrc_VB\VB6
+ServerSideCab=
+File1=e:\SourcesVB6\BiaSrc_VB\VB6\Bia_System.DEP
+Handler1=PDWizard.FolderDplySubWiz
+Handler2=PDWizard.WebPostDplySubWiz

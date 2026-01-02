@@ -1,0 +1,153 @@
+
+fgSelect_FormatString = fgSelect.FormatString
+
+Dim fgSelect_FormatString As String, fgSelect_K As Integer
+Dim fgSelect_RowDisplay As Integer, fgSelect_RowClick As Integer, fgSelect_ColClick As Integer
+Dim fgSelect_ColorClick As Long, fgSelect_ColorDisplay As Long
+Dim fgSelect_Sort1 As Integer, fgSelect_Sort2 As Integer
+Dim fgSelect_SortAD As Integer, fgSelect_Sort1_Old As Integer
+Dim fgSelect_arrIndex As Integer
+Dim blnfgSelect_DisplayLine As Boolean
+
+Public Sub fgSelect_Color(lRow As Integer, lColor As Long, lColor_Old As Long)
+Dim mRow As Integer, I As Integer
+fgSelect.Visible = False
+mRow = fgSelect.Row
+
+If lRow > 0 And lRow < fgSelect.Rows Then
+    fgSelect.Row = lRow
+    For I = 1 To 0 Step -1
+        fgSelect.Col = I: fgSelect.CellBackColor = lColor_Old
+    Next I
+End If
+lRow = 0
+If mRow > 0 Then
+    fgSelect.Row = mRow
+    If fgSelect.Row > 0 Then
+        lRow = fgSelect.Row
+        lColor_Old = fgSelect.CellBackColor
+        For I = 1 To 0 Step -1
+          fgSelect.Col = I: fgSelect.CellBackColor = lColor
+        Next I
+    End If
+End If
+fgSelect.LeftCol = fgSelect.FixedCols
+fgSelect.Visible = True
+End Sub
+
+Private Sub fgSelect_Display_1()
+
+Dim K As Long, xSQL As String, blnRupture As Boolean, blnDisplay As Boolean
+
+On Error GoTo Error_Handler
+currentAction = currentAction & "-> fgSelect_Display"
+fgSelect.Visible = True ' False
+fgSelect_Reset
+fgSelect.FormatString = fgSelect_FormatString
+fgSelect.Rows = 1
+                 
+fgSelect.Row = 0
+Do While Not rsSab.EOF
+    Call rsYSSIUSR0_GetBuffer(rsSab, xYSSIUSR0)
+    fgSelect.Rows = fgSelect.Rows + 1
+    fgSelect.Row = fgSelect.Rows - 1
+    fgSelect_Display_1_Line
+    rsSab.MoveNext
+Loop
+
+fgSelect.Visible = True
+
+
+Call lstErr_AddItem(lstErr, cmdContext, "enregistrements : " & fgSelect.Rows - 1): DoEvents
+
+Exit Sub
+
+Error_Handler:
+    V = Error
+Error_MsgBox:
+    If Not blnAuto Then MsgBox V, vbCritical, Me.Name & " : " & currentAction
+
+
+End Sub
+
+Public Sub fgSelect_Display_1_Line()
+On Error Resume Next
+
+fgSelect.Col = 0: fgSelect.Text = xYSSIUSR0.SSIUSRNAT
+fgSelect.Col = 1: fgSelect.Text = xYSSIUSR0.SSIUSRUIDN
+fgSelect.Col = 2: fgSelect.Text = Trim(xYSSIUSR0.SSIUSRUIDX)
+fgSelect.Col = 3: fgSelect.Text = xYSSIUSR0.SSIUSRSTAK
+If xYSSIUSR0.SSIUSRSTAK <> "A" Then fgSelect.CellBackColor = mColor_Y2
+fgSelect.Col = 4: fgSelect.Text = dateImp10_S(xYSSIUSR0.SSIUSRDECH)
+If xYSSIUSR0.SSIUSRDECH < DSys Then fgSelect.CellBackColor = mColor_W1
+fgSelect.Col = 5: fgSelect.Text = xYSSIUSR0.SSIUSRPRFX
+If xYSSIUSR0.SSIUSRPRFD = 0 Then
+    fgSelect.Col = 6: fgSelect.Text = xYSSIUSR0.SSIUSRPRFK
+Else
+    fgSelect.Col = 6: fgSelect.Text = xYSSIUSR0.SSIUSRPRFK & "  " & dateImp10_S(xYSSIUSR0.SSIUSRPRFD)
+End If
+If xYSSIUSR0.SSIUSRPRFK <> " " Then fgSelect.CellBackColor = mColor_W1
+fgSelect.Col = 7: fgSelect.Text = xYSSIUSR0.SSIUSRTLNK
+fgSelect.Col = 8: fgSelect.Text = xYSSIUSR0.SSIUSRYUSR
+fgSelect.Col = 9: fgSelect.Text = dateImp10_S(xYSSIUSR0.SSIUSRYAMJ) & "  " & timeImp8(xYSSIUSR0.SSIUSRYHMS) & " (" & xYSSIUSR0.SSIUSRYVER & ")"
+
+End Sub
+
+Public Sub fgSelect_Reset()
+fgSelect.Clear
+fgSelect_Sort1 = 0: fgSelect_Sort2 = 0
+fgSelect_Sort1_Old = -1
+fgSelect_RowDisplay = 0: fgSelect_RowClick = 0
+fgSelect_arrIndex = fgSelect.Cols - 1
+blnfgSelect_DisplayLine = False
+fgSelect_SortAD = 6
+fgSelect.LeftCol = fgSelect.FixedCols
+
+End Sub
+
+Public Sub fgSelect_Sort()
+
+If fgSelect.Rows > 1 Then
+    fgSelect.Row = 1
+    fgSelect.RowSel = fgSelect.Rows - 1
+    
+    If fgSelect_Sort1_Old = fgSelect_Sort1 Then
+        If fgSelect_SortAD = 5 Then
+            fgSelect_SortAD = 6
+        Else
+            fgSelect_SortAD = 5
+        End If
+    Else
+        fgSelect_SortAD = 5
+    End If
+    fgSelect_Sort1_Old = fgSelect_Sort1
+    
+    fgSelect.Col = fgSelect_Sort1
+    fgSelect.ColSel = fgSelect_Sort2
+    fgSelect.Sort = fgSelect_SortAD
+End If
+
+End Sub
+
+Public Sub fgSelect_SortX(lK As Integer)
+Dim I As Integer, X As String, wIndex As Long
+
+For I = 1 To fgSelect.Rows - 1
+    fgSelect.Row = I
+    fgSelect.Col = lK
+    Select Case lK
+'        Case 3: fgSelect.Col = 3: X = Format$(Val(fgSelect.Text), "000000000000000.00")
+
+    End Select
+    fgSelect.Col = fgSelect_arrIndex - 1
+    fgSelect.Text = X
+Next I
+
+fgSelect_Sort1 = fgSelect_arrIndex - 1: fgSelect_Sort2 = fgSelect_arrIndex - 1
+fgSelect_Sort
+End Sub
+
+
+
+
+

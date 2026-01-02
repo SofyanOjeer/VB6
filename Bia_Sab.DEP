@@ -1,0 +1,82 @@
+[Version]
+Version=1.0.0.0
+
+[Bia_Sab.exe <000C>]
+Dest=$(AppPath)
+Date=02/11/2021
+Time=18:50
+Version=1.0.0.0
+CABFilename=Bia_Sab.CAB
+CABINFFile=Bia_Sab.INF
+Uses1=msvbvm60.dll
+Uses2=oleaut32.dll
+Uses3=olepro32.dll
+Uses4=asycfilt.dll
+Uses5=stdole2.tlb
+Uses6=COMCAT.DLL
+Uses7=VB6FR.DLL
+Uses8=scrrun.dll
+Uses9=msado28.tlb
+Uses10=msjro.dll
+Uses11=vbSendMail.dll
+Uses12=ItemEnum.dll
+Uses13=DSSvrMap.dll
+Uses14=activeds.tlb
+Uses15=EXCEL.EXE
+Uses16=PDFCreator.exe
+Uses17=TABCTL32.OCX
+Uses18=MSCOMCTL.OCX
+Uses19=MSCOMCT2.OCX
+Uses20=COMCT332.OCX
+Uses21=RICHTX32.OCX
+Uses22=msflxgrd.ocx
+Uses23=comctl32.ocx
+Uses24=MSWINSCK.OCX
+
+[msado28.tlb <000C>]
+Dest=$(WinSysPath)
+Date=06/06/2012
+Time=04:51
+Version=6.1.7601.17857
+
+[msjro.dll <000C>]
+Dest=$(WinSysPath)
+Date=06/06/2012
+Time=06:05
+Version=6.1.7601.17857
+
+[vbSendMail.dll <000C>]
+Dest=$(WinSysPath)
+Date=05/09/2003
+Time=18:11
+Version=3.6.0.5
+
+[ItemEnum.dll <000C>]
+Dest=$(WinSysPath)
+Date=03/08/2010
+Time=20:39
+Version=6.5.0.9
+
+[DSSvrMap.dll <000C>]
+Dest=$(WinSysPath)
+Date=03/08/2010
+Time=20:39
+Version=6.5.0.9
+
+[activeds.tlb <000C>]
+Dest=$(WinSysPath)
+Date=14/07/2009
+Time=00:37
+Version=6.1.7600.16385
+
+[EXCEL.EXE <000C>]
+Dest=$(AppPath)
+Date=23/03/2018
+Time=17:57
+Version=12.0.6787.5000
+
+[PDFCreator.exe <000C>]
+Dest=$(AppPath)
+Date=08/09/2015
+Time=09:37
+Version=1.7.0.3
